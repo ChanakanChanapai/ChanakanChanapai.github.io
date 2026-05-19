@@ -1,40 +1,8 @@
-const themeToggle =
-document.getElementById("themeToggle");
+const btn = document.querySelector(".btn");
 
-themeToggle.onclick = ()=>{
-
-  document.body.classList.toggle("dark");
-
-  if(document.body.classList.contains("dark")){
-
-    themeToggle.innerHTML = "☀️";
-
-  }else{
-
-    themeToggle.innerHTML = "🌙";
-
-  }
-
-};
-
-const text =
-"AI & Web Developer";
-
-let index = 0;
-
-function typingEffect(){
-
-  if(index < text.length){
-
-    document.querySelector(".typing")
-    .innerHTML += text.charAt(index);
-
-    index++;
-
-    setTimeout(typingEffect,100);
-
-  }
-
+// ถ้ามีปุ่ม btn ในอนาคต ใช้เพิ่ม interaction ได้
+if (btn) {
+  btn.addEventListener("click", function () {
+    console.log("Open Resume clicked");
+  });
 }
-
-typingEffect();
