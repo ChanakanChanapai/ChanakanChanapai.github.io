@@ -1,32 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChanakanChanapaiwebsite</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chanakan Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-<div class="container">
-<h1>Welcome!! This is my website</h1>
-<a href="resume.html">My Resume</a>
-</div>
-</header>
- 
-  <div class="section Contact">
-<h2>CONTACT</h2>
-<div class="social-links">
-<a href="https://github.com/ChanakanChanapai" target="_blank">
-<i class="fab fa-github"></i> GitHub
-</a>
-<a href="http://www.linkedin.com/in/chanakan-chanapai-95a311335" target="_blank">
-<i class="fab fa-linkedin"></i> LinkedIn
-</a>
-</div>
-</div>
+
+  <nav class="navbar">
+
+    <div class="logo">
+      Chanakan
+    </div>
+
+    <div class="nav-links">
+
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+
+      <button id="themeToggle">
+        🌙
+      </button>
+
+    </div>
+
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>
+        Hi, I'm
+        <span>Chanakan</span>
+      </h1>
+
+      <h2 class="typing"></h2>
+
+      <p>
+        Computer Science Student
+        passionate about AI,
+        Computer Vision,
+        and Web Development.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#projects" class="btn-primary">
+          View Projects
+        </a>
+
+        <a href="https://github.com/ChanakanChanapai"
+           target="_blank"
+           class="btn-outline">
+
+          GitHub
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <h2 class="section-title">
+      About Me
+    </h2>
+
+    <p class="about-text">
+
+      I enjoy building AI systems,
+      modern websites,
+      and creative user experiences.
+
+    </p>
+
+  </section>
+
+  <section id="skills">
+
+    <h2 class="section-title">
+      Skills
+    </h2>
+
+    <div class="skills-grid">
+
+      <div class="card">Python</div>
+      <div class="card">YOLOv8</div>
+      <div class="card">JavaScript</div>
+      <div class="card">HTML/CSS</div>
+      <div class="card">React</div>
+      <div class="card">Computer Vision</div>
+
+    </div>
+
+  </section>
+
+  <section id="projects">
+
+    <h2 class="section-title">
+      Projects
+    </h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+
+        <img src="assets/project1.png">
+
+        <div class="project-content">
+
+          <h3>
+            Thai Banana Classification
+          </h3>
+
+          <p>
+            YOLOv8 AI system for banana classification.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <h2 class="section-title">
+      Contact
+    </h2>
+
+    <p>
+      Feel free to contact me.
+    </p>
+
+  </section>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
-
- 
