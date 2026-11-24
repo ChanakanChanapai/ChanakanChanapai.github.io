@@ -1,27 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chanakan Chanapai (Tonhom) • Minimal Cozy Portfolio</title>
+  
+  <!-- Google Fonts: Playfair Display, Lora, Plus Jakarta Sans, Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <header>
-    <h1>My Portfolio</h1>
-    <p>Welcome to my personal website</p>
-  </header>
+  <!-- Background Watermark Outlined Text (Like Reference Image) -->
+  <div class="bg-watermark-container" aria-hidden="true">
+    <div class="bg-watermark-text">
+      RESUME<br>RESUME<br>RESUME
+    </div>
+  </div>
 
-  <section class="container">
-    <h2>About Me</h2>
-    <p>Hello! I'm a student at the University of Phayao , Faculty of Information & Communication Technology ( ICT ) , major in Computer Science.</p>
-    <p>This is my Resume.</p>
-    <!-- ปุ่ม Resume -->
-    <a class="btn" href="resume.html" target="_blank">View Resume</a>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span class="sparkle">✦</span> Chanakan Chanapai
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="resume.html" class="nav-pill-btn"><i class="fa-regular fa-file-lines"></i> Resume</a></li>
+    </ul>
+  </nav>
 
-  </section>
+  <!-- Page Container -->
+  <main class="page-container">
 
+    <!-- ====================================================================
+         HERO SECTION (Left Editorial Bio + Right Photo Collage with Pills)
+         ==================================================================== -->
+    <section class="hero-section" id="about">
+      
+      <!-- Left Column: Big Title & Bio -->
+      <div class="hero-left">
+        <h1 class="hero-big-title">
+          Hello,<br>
+          I'm <span class="highlight-name">Tonhom !</span>
+        </h1>
+
+        <p class="hero-bio-text">
+          ฉันชื่อ <strong>ชนกาญจน์ ชนะภัย (ต้นหอม)</strong> นิสิตสาขาวิทยาการคอมพิวเตอร์ คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยพะเยา 
+          มีความมุ่งมั่นและสนใจในด้าน <strong>Computer Vision, Object Tracking</strong> และการออกแบบ <strong>UI/UX Design</strong> 
+          กำลังมองหาโอกาสฝึกงานเพื่อนำความรู้และทักษะด้าน AI และการพัฒนาซอฟต์แวร์ไปสร้างสรรค์ประโยชน์ต่อองค์กร
+        </p>
+
+        <div class="hero-pills-row">
+          <a href="https://linkedin.com/in/chanakan-chanapai-95a311335" target="_blank" rel="noopener" class="pill-contact-link primary">
+            <i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/chanakan-chanapai
+          </a>
+          <a href="mailto:chanakanchanapai01@gmail.com" class="pill-contact-link">
+            <i class="fa-regular fa-envelope"></i> ติดต่อทางอีเมล
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Photo Collage & Floating Pills & Contact Box -->
+      <div class="hero-right-collage">
+        <div class="collage-frame">
+          <div class="collage-backdrop-shape"></div>
+          
+          <!-- Floating Pill 1 (Top-Left) -->
+          <div class="floating-pill pill-top-left">
+            <i class="fa-solid fa-cake-candles" style="color: #c4b5fd;"></i> 28 มกราคม 2548
+          </div>
+
+          <!-- Profile Image -->
+          <img 
+            src="portfolio.png" 
+            alt="Chanakan Chanapai (ชนกาญจน์ ชนะภัย)" 
+            class="collage-img"
+          />
+
+          <!-- Floating Pill 2 (Bottom-Right) -->
+          <div class="floating-pill pill-bottom-right">
+            <i class="fa-solid fa-star"></i> GPAX 3.64
+          </div>
+        </div>
+
+        <!-- Sleek Contact Box Overlapping Below Photo -->
+        <div class="collage-contact-box">
+          <div class="box-title">
+            Contact <span>Phayao, TH</span>
+          </div>
+          <ul class="contact-mini-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>19 Maeka, Mueang Phayao, Phayao 56000</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:chanakanchanapai01@gmail.com">chanakanchanapai01@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+66618120978">+66 61-812-0978</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <!-- Sleek Contact Box Overlapping Below Photo -->
+        <div class="collage-contact-box">
+          <div class="box-title">
+            Contact <span>Phayao, TH</span>
+          </div>
+          <ul class="contact-mini-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>19 Maeka, Mueang Phayao, Phayao 56000</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:chanakanchanapai01@gmail.com">chanakanchanapai01@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+66618120978">+66 61-812-0978</a>
+            </li>
+          </ul>
+        </div>
+
+    </section>
+
+    <!-- ====================================================================
+         BENTO 2-COLUMN GRID (Matching Layout Structure of Reference)
+         ==================================================================== -->
+    <div class="content-grid-layout">
+
+      <!-- ================= LEFT COLUMN ================= -->
+      <div class="content-col">
+
+        <!-- Block 1: Education -->
+        <section class="block-education" id="education">
+          <h2 class="block-title">
+            <span class="sparkle-icon">✦</span> Education
+          </h2>
+
+          <div class="timeline-sparkle-list">
+            <div class="timeline-sparkle-item">
+              <div class="timeline-year">
+                <span class="star">✦</span> 2566 – ปัจจุบัน
+              </div>
+              <div class="timeline-detail">
+                <h4>วิทยาการคอมพิวเตอร์ (วท.บ.)</h4>
+                <p>มหาวิทยาลัยพะเยา • คณะเทคโนโลยีสารสนเทศและการสื่อสาร</p>
+                <span class="badge-mini">GPAX : 3.64</span>
+              </div>
+            </div>
+
+            <div class="timeline-sparkle-item">
+              <div class="timeline-year">
+                <span class="star">✦</span> 2563 – 2566
+              </div>
+              <div class="timeline-detail">
+                <h4>มัธยมศึกษาตอนปลาย (วิทย์-คณิต)</h4>
+                <p>โรงเรียนสวนกุหลาบวิทยาลัย ชลบุรี</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Block 2: Experience & Research (Velvety Purple Accent Card) -->
+        <section class="block-experience" id="experience">
+          <h2 class="block-title">
+            <span class="sparkle-icon">✦</span> Experience
+          </h2>
+
+          <!-- Award Banner -->
+          <div class="award-banner-inner">
+            <i class="fa-solid fa-trophy" style="color: #fde68a;"></i> Best Paper Award • ICDECT 2025 (Springer)
+          </div>
+
+          <div class="timeline-sparkle-list">
+            <!-- Paper -->
+            <div class="timeline-sparkle-item">
+              <div class="timeline-year">
+                <span class="star">✦</span> 2024 – 2025
+              </div>
+              <div class="timeline-detail">
+                <div class="research-title">
+                  AI-Powered Models for Thai Banana Cultivar Conservation & Commercial Management Using YOLOv8n and YOLOv9t
+                </div>
+                <div class="research-meta">งานวิจัยระดับนานาชาติ ICDECT 2025 (Springer)</div>
+                <p class="research-desc">
+                  เปรียบเทียบประสิทธิภาพการจำแนกสายพันธุ์กล้วยไทยด้วย YOLO หลายเวอร์ชัน 
+                  โดยพบว่า YOLOv8n และ YOLOv9t ให้ค่า Precision, Recall และ mAP ดีที่สุด
+                </p>
+              </div>
+            </div>
+
+            <!-- Final Project -->
+            <div class="timeline-sparkle-item">
+              <div class="timeline-year">
+                <span class="star">✦</span> 2567 – 2568
+              </div>
+              <div class="timeline-detail">
+                <div class="research-title">
+                  Final Project : ระบบเว็บแอปพลิเคชันจำแนกสายพันธุ์กล้วยไทยและจองผลผลิต
+                </div>
+                <div class="research-meta">Academic Project with Deep Learning</div>
+                <p class="research-desc">
+                  รับผิดชอบส่วนจัดเตรียมชุดข้อมูล (ถ่ายภาพจริง, ทำ Data Labeling, Resizing), 
+                  ร่วมฝึกโมเดล และออกแบบโครงสร้าง UI/UX ของระบบด้วย Figma
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Pill Tags (Like #Creativity #Communication in Reference) -->
+          <div class="experience-tags-row">
+            <span class="black-tag-pill">#ComputerVision</span>
+            <span class="black-tag-pill">#YOLOv8n</span>
+            <span class="black-tag-pill">#ObjectTracking</span>
+            <span class="black-tag-pill">#UIUXDesign</span>
+            <span class="black-tag-pill">#DataLabeling</span>
+          </div>
+        </section>
+
+        <!-- Block 3: Activities -->
+        <section class="block-activities" id="activities">
+          <h2 class="block-title">
+            <span class="sparkle-icon">✦</span> Activities
+          </h2>
+
+          <div class="timeline-sparkle-list">
+            <div class="timeline-sparkle-item">
+              <div class="timeline-year">
+                <span class="star">✦</span> 2568
+              </div>
+              <div class="timeline-detail">
+                <h4>CS Demo Day (2568)</h4>
+                <p>พิธีกรดำเนินรายการ (MC) และร่วมนำเสนอโปรเจกต์ต่อหน้าคณาจารย์และผู้เข้าร่วมงาน</p>
+              </div>
+            </div>
+
+            <div class="timeline-sparkle-item">
+              <div class="timeline-year">
+                <span class="star">✦</span> 2567 – 2568
+              </div>
+              <div class="timeline-detail">
+                <h4>อบรมผู้นำนิสิต</h4>
+                <p>เข้าร่วมกิจกรรมอบรมพัฒนาภาวะผู้นำ การทำงานเป็นทีม และการสื่อสารอย่างมีประสิทธิภาพ</p>
+              </div>
+            </div>
+
+            <div class="timeline-sparkle-item">
+              <div class="timeline-year">
+                <span class="star">✦</span> 2567
+              </div>
+              <div class="timeline-detail">
+                <h4>กิจกรรม SID</h4>
+                <p>หน่วยขับเคลื่อนนวัตกรรมเพื่อสังคม ประจำพื้นที่ภาคเหนือตอนบน (Social Innovation Driving)</p>
+              </div>
+            </div>
+
+            <div class="timeline-sparkle-item">
+              <div class="timeline-year">
+                <span class="star">✦</span> 2567
+              </div>
+              <div class="timeline-detail">
+                <h4>ผู้จัดกิจกรรมรับน้อง ปี 67</h4>
+                <p>ร่วมวางแผน จัดกิจกรรม และทำหน้าที่ฝ่ายประสานงานการสื่อสาร</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ================= RIGHT COLUMN ================= -->
+      <div class="content-col">
+
+        <!-- Block 1: Technical skills (Icons + Coding + Pill Tags) -->
+        <section class="block-tech-skills" id="skills">
+          <h2 class="block-title">
+            <span class="sparkle-icon">✦</span> Technical skills
+          </h2>
+
+          <div class="skills-subgrid">
+            <!-- Software / Tools (Chic App Boxes like Ps, Ai, In, Xd) -->
+            <div class="sub-skill-col">
+              <h4>Software & Tools</h4>
+              <div class="software-icons-grid">
+                <div class="soft-icon-box" title="Python">
+                  Py
+                  <span>Python</span>
+                </div>
+                <div class="soft-icon-box" title="YOLO Vision">
+                  YOLO
+                  <span>Vision</span>
+                </div>
+                <div class="soft-icon-box" title="Figma">
+                  Fig
+                  <span>Figma</span>
+                </div>
+                <div class="soft-icon-box" title="GitHub">
+                  Git
+                  <span>GitHub</span>
+                </div>
+                <div class="soft-icon-box" title="C Language">
+                  C
+                  <span>Lang</span>
+                </div>
+                <div class="soft-icon-box" title="Microsoft Access">
+                  Acc
+                  <span>Access</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coding & Methodologies -->
+            <div class="sub-skill-col">
+              <h4>Specialized in:</h4>
+              <ul class="coding-skills-list">
+                <li><span class="bullet">✦</span> Computer Vision & Tracking</li>
+                <li><span class="bullet">✦</span> Dataset Labeling & Resizing</li>
+                <li><span class="bullet">✦</span> YOLO (v8n, v9t) Training</li>
+                <li><span class="bullet">✦</span> mAP, Precision & Recall</li>
+                <li><span class="bullet">✦</span> ThaiLLM API Integration</li>
+                <li><span class="bullet">✦</span> HTML, CSS, JavaScript</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Dark Pill Buttons (Matching Reference packaging, UI/UX, etc.) -->
+          <div class="skill-pills-row">
+            <span class="skill-pill-dark">Computer Vision</span>
+            <span class="skill-pill-dark">UI/UX design</span>
+            <span class="skill-pill-dark">Object Tracking</span>
+            <span class="skill-pill-dark">Data Preparation</span>
+            <span class="skill-pill-dark">Model Evaluation</span>
+          </div>
+        </section>
+
+        <!-- Block 2: Certificates & Awards -->
+        <section class="block-certificates" id="certificates">
+          <h2 class="block-title">
+            <span class="sparkle-icon">✦</span> Certificates
+          </h2>
+
+          <div class="cert-mini-row">
+            <!-- Award -->
+            <div class="cert-card-item gold">
+              <div class="cert-icon-wrap">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="cert-text">
+                <h5>Best Paper Award (ICDECT 2025)</h5>
+                <p>Bhubaneswar Engineering College & Springer Publication</p>
+              </div>
+            </div>
+
+            <!-- ICDECT -->
+            <div class="cert-card-item">
+              <div class="cert-icon-wrap">
+                <i class="fa-solid fa-scroll"></i>
+              </div>
+              <div class="cert-text">
+                <h5>Certificate of Presentation (ICDECT 2025)</h5>
+                <p>6th International Conference on Data Engineering</p>
+              </div>
+            </div>
+
+            <!-- ThaiLLM -->
+            <div class="cert-card-item">
+              <div class="cert-icon-wrap">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="cert-text">
+                <h5>อบรมหลักสูตร LLM (2568) — ThaiLLM</h5>
+                <p>NECTEC • สวทช. • AIAT • จุฬาลงกรณ์มหาวิทยาลัย</p>
+              </div>
+            </div>
+
+            <!-- Medical AI -->
+            <div class="cert-card-item">
+              <div class="cert-icon-wrap">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div class="cert-text">
+                <h5>อบรม AI for Thai : ภาพทางการแพทย์ (2568)</h5>
+                <p>ศูนย์เทคโนโลยีอิเล็กทรอนิกส์และคอมพิวเตอร์แห่งชาติ</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Block 3: Language & Hobbies/Interests (Matching Reference Bottom) -->
+        <section class="block-language-hobbies">
+          <h2 class="block-title">
+            <span class="sparkle-icon">✦</span> Language
+          </h2>
+
+          <div class="lang-grid">
+            <div class="lang-item">
+              <h5>Thai</h5>
+              <p>Native (ภาษาไทย)</p>
+            </div>
+            <div class="lang-item">
+              <h5>English</h5>
+              <p>Intermediate / Professional</p>
+            </div>
+          </div>
+
+          <h2 class="block-title" style="margin-top: 24px;">
+            <span class="sparkle-icon">✦</span> Hobbies & Interests
+          </h2>
+
+          <div class="hobbies-icon-grid">
+            <div class="hobby-box">
+              <div class="hobby-circle">
+                <i class="fa-solid fa-headphones"></i>
+              </div>
+              <span class="hobby-title">Music & Lo-fi</span>
+              <span class="hobby-desc">Focus & coding</span>
+            </div>
+
+            <div class="hobby-box">
+              <div class="hobby-circle">
+                <i class="fa-solid fa-mug-hot"></i>
+              </div>
+              <span class="hobby-title">Cozy Cafe</span>
+              <span class="hobby-desc">Coffee & chill</span>
+            </div>
+
+            <div class="hobby-box">
+              <div class="hobby-circle">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <span class="hobby-title">UI/UX Design</span>
+              <span class="hobby-desc">Minimal layout</span>
+            </div>
+
+            <div class="hobby-box">
+              <div class="hobby-circle">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <span class="hobby-title">AI Vision</span>
+              <span class="hobby-desc">Exploring models</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© ชนกาญจน์ ชนะภัย (Chanakan Chanapai) • มหาวิทยาลัยพะเยา • Cozy Minimal Purple-Black Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
